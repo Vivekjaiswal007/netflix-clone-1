@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <div id="nav" class="nav">
+      <img class="nav__logo" src="images/netflix-logo.png" alt="" />
+      <img class="nav__avatar" src="images/netflix-avatar.png" alt="" />
+    </div>
+
+    <!-- header -->
+    <header class="banner">
+      <div class="banner__contents">
+        <h1 class="banner__title">Money Heist</h1>
+        <div class="banner__buttons">
+          <button class="banner__button">Play</button>
+          <button class="banner__button">My List</button>
+        </div>
+        <h1 class="banner__description">
+          To carry out the biggest heist in history, a mysterious man called The Professor recruits
+          a band of eight robbers who have a single characteristic: n...
+        </h1>
+      </div>
+      <div class="banner--fadeBottom"></div>
+    </header>
+
+    <!-- Netflix Originals -->
+    <div class="row">
+      <h2>NETFLIX ORIGINALS</h2>
+      <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="https://imgs.search.brave.com/1zZd_dokmHhjZ9MNkJvWDSRKQREjayrqbhqyFhbMaLI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/b2ZmaWNpYWwtcG9z/dGVyLWZvci10aGUt/bmV0ZmxpeC1tb3Zp/ZS10cm9sbC1jb21p/bmctdG9tb3Jyb3ct/djAtdDQ3aDAxazFv/NDNhMS5qcGc_d2lk/dGg9NjQwJmNyb3A9/c21hcnQmYXV0bz13/ZWJwJnM9ZWQ1YTdh/YzMxNDg1MTQyYTg1/NWVjMDFhYzJiNjRh/ZjcwNTE5N2I4Nw" alt="" />
+
+        <img class="row__poster row__posterLarge" src="https://imgs.search.brave.com/LXBDS5hFAg_HutBn5Fh-COs9fsCLahSZuv8FXO_e0Ts/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tbHBu/azcyeWNpd2MuaS5v/cHRpbW9sZS5jb20v/Y3FoaUhMYy5JSVpT/fjJlZjczL3c6NjAw/L2g6NzUwL3E6NzUv/aHR0cHM6Ly9ibGVl/ZGluZ2Nvb2wuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIy/LzA2L0ZVaERWZnBY/c0FVTWRNZC5qcGc" alt="" />
+
+        <img class="row__poster row__posterLarge" src="https://imgs.search.brave.com/8rRAszEYT5tUIQQ1GmUKPzPuTc8MCdqjEZvYBYB-OQk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/am9ibG8uY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIyLzEx/L3RoZS1wYWxlLWJs/dWUtZXllLXBvc3Rl/ci04MTl4MTAyNC5q/cGc" alt="" />
+
+        <img class="row__poster row__posterLarge" src="https://imgs.search.brave.com/90y_nMgPYpYq8VJ0v10H4z4zBc7IyfTBsvHPn3bs57Y/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzQ0OTg4MzI5L3Iv/aWwvYjVlY2NkLzUz/MjY3MjgwMTcvaWxf/NjAweDYwMC41MzI2/NzI4MDE3X2s0bjEu/anBn" alt="" />
+
+        <img class="row__poster row__posterLarge" src="https://imgs.search.brave.com/am8Cky8YfBQPgViery7UFCF1tteeUOW_JvWlCOMo8N4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29taW5nc29vbi5u/ZXQvd3AtY29udGVu/dC91cGxvYWRzL3Np/dGVzLzMvMjAyMy8w/OC90aGUta2lsbGVy/LXBvc3Rlci5qcGc_/dz02OTE" alt="" />
+
+        <img class="row__poster row__posterLarge" src="https://imgs.search.brave.com/F44ROccN-HlVenG4fNYlncVlHv1NDrADLQt8Nd_ESHE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/am9ibG8uY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIzLzA4/L2ZyZWVsYW5jZS1q/b2huLWNlbmEtNDAw/eDYwMC5qcGc" alt="" />
+
+        <img class="row__poster row__posterLarge" src="https://imgs.search.brave.com/6Zk4TFJZV4XTs_0T72gLwTTR4ZdOjlQ3QlcKmgXcn-0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tbHBu/azcyeWNpd2MuaS5v/cHRpbW9sZS5jb20v/Y3FoaUhMYy5JSVpT/fjJlZjczL3c6MzUw/L2g6MzUwL3E6NzUv/cnQ6ZmlsbC9nOmNl/L2h0dHBzOi8vYmxl/ZWRpbmdjb29sLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/My8wOS9lemdpZi0y/LTEzYWE4MGUyOWIt/MzUweDM1MC5qcGVn" alt="" />
+
+        <img class="row__poster row__posterLarge" src="https://imgs.search.brave.com/-HGr6tHJTHbTrndRj_8yz_jwPw3YvzgVikVYDT0aBm8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW92aWVmb25lLmNv/bS9pbWFnZS1hc3Nl/dHMvNjk3ODQzLzdn/S0k5aHBFTWNaVVFw/TmdLcmtEekpwYm5O/Uy5qcGc_ZD0zNjB4/NTQwJnE9NjA" alt="" />
+      </div>
+    </div>
+
+    <!-- Trending Now -->
+    <div class="row">
+      <h2>Trending Now</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="https://imgs.search.brave.com/lHTtCijNmvgrKH1QiD-hWWgBf8315d6gAMJb1WFEHRw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW92aWVmb25lLmNv/bS9pbWFnZS1hc3Nl/dHMvNzIyMTQ5L3R2/WDJKbHRYam1wSExR/N0JCaWp5VmM5U1R2/NC5qcGc_ZD0zNjB4/NTQwJnE9NjA" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/XzXu-v6YvE1W4TB1Sn3xDEZA8WMcuMhyUrstKJJsxPs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/am9ibG8uY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIzLzA4/L2l0LWxpdmVzLWlu/c2lkZS1wb3N0ZXIt/MS00MDB4NjAwLmpw/Zw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/WfSiaHA_fhQn3D70nBIe-6o6aq46P1wCV8P3rG78Lb0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/am9ibG8uY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIxLzA3/L2FxdWFtYW4tMi1w/b3N0ZXItNDAweDYw/MC5qcGc" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/zGsu98qJWTpkvFpwEvJASmTAxMDdmsWbzoscGC0QqqE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9paDEu/cmVkYnViYmxlLm5l/dC9pbWFnZS4zMDA5/NjkyMzMzLjczODAv/ZmxhdCw3NTB4LDA3/NSxmLXBhZCw3NTB4/MTAwMCxmOGY4Zjgu/anBn" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/ZFnPC7s4E3dZSCSNipnvlDMDyqVBGQQt4FnF-TWl7sw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29tcGFueWZvbGRl/cnMuY29tL2Jsb2cv/bWVkaWEvMjAxNy8w/Ny90aGUtdGhpbmcu/anBn" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/cxHpEh78G99cU3cfSSg9Z1Vjyds_Fb1LHv4Ir9fJ78w/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9paDEu/cmVkYnViYmxlLm5l/dC9pbWFnZS4zNTgx/MDQzODY5Ljg2NDgv/cG9zdGVyLDUwNHg0/OTgsZjhmOGY4LXBh/ZCw2MDB4NjAwLGY4/ZjhmOC51MS5qcGc" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/LZ3dJcWtlbUpizM8jU06E7gaXnTzI9B82FIL99T8yKk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/am9ibG8uY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIzLzA4/L2ZyZWVsYW5jZS1q/b2huLWNlbmEtNDAw/eDYwMC5qcGc" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/qFWvq28ZUsi_2MwblPki13xRtZwS8TrPetQHYeOi6EI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvOTVh/ZjM2NDItZWZmNy00/ZWFiLTg2MmUtYmRk/YzE3YzBkMmI2XzEu/NWNiOGIyMDcxZGU0/NjM5ZmQ3ZjRkMDU3/MzhkYWVlOTUuanBl/Zz9vZG5IZWlnaHQ9/Nzg0Jm9kbldpZHRo/PTU4MCZvZG5CZz1G/RkZGRkY" alt="" />
+      </div>
+    </div>
+
+    <!-- Top Rated -->
+    <div class="row">
+      <h2>Top Rated</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="https://imgs.search.brave.com/knsQlSETZbqGsQvXespjM3cL3ngYZ4mwOeJVsw_SC-s/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzM5LzAy/LzkxLzM5MDI5MTU3/YmYwY2U3Yjg2ZmZi/Zjk4N2U2NDY3MmE3/LmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/V3-SRnorMkJtY7RoJ4IQvhH50Y3rGsMJI_IjaRsNxl8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9mbGFz/aGJhay5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMTgvMDUv/Q2FzdGluZy1DYWxs/LXBvc3Rlci5qcGc" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/C0c-SQ7iAr0kwVL2BIOm-j_Z7g7uZAKfX6i0TdnKZA4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2MyLzlh/L2E0L2MyOWFhNDQ5/NmE0NjZiNWVmNTMw/NTFjYTRhYmQwYjM1/LmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/B2dm57w8fPAZJBccBwe_ci4dCYKLD9gEOaroDo5_CnY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9mbGFz/aGJhay5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMTgvMDUv/U2V4LUN1cmVzLXRo/ZS1DcmF6eS1wb3N0/ZXIuanBn" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/1hk2mQhpaQJ4zRqazb91JPipogRMoasw1rZZ20a5qvA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzIxLzVl/L2ZlLzIxNWVmZWUw/YWJjNWIwYzI4OWNm/MGYwNTlmMWQ3YzQ5/LmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/MV2hLaDZ8ckX5qyY-3r4iFcGh_tqcKvzt1wc18xkvDY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9mbGFz/aGJhay5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMTgvMDUv/SS1XYW50LVlvdS1w/b3N0ZXItMTIwMHgx/NzkzLmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/Q8y75MdakPMigW0BonOyjiRQ3DqJSh0Q9y1P3QEOy3o/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vdGhpbmtt/b25zdGVycy5jb20v/c3BlYWtpbmdodW1h/bi9tZWRpYS93cC1j/b250ZW50L3VwbG9h/ZHMvU2hvd2dpcmxz/LU1vdmllLVBvc3Rl/ci0xNzQxeDI1NjAu/anBnP3Jlc2l6ZT0x/MDgwLDE1ODgmc3Ns/PTE" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/ekw6qMG1ycin7s9IGMhzOMZ7-af_lEoHmYQ-c_mf2W0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDFZSmFOdlNZK0wu/anBn" alt="" />
+      </div>
+    </div>
+
+    <!-- Action Movies -->
+    <div class="row">
+      <h2>Action Movies</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="https://imgs.search.brave.com/1hk2mQhpaQJ4zRqazb91JPipogRMoasw1rZZ20a5qvA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzIxLzVl/L2ZlLzIxNWVmZWUw/YWJjNWIwYzI4OWNm/MGYwNTlmMWQ3YzQ5/LmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/mQegr05nIXv8DZaz0hiLmcRElR_CfMILYW66otIL4co/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9hY3Rpb24t/bW92aWUtcG9zdGVy/LXRlbXBsYXRlLWRl/c2lnbi1iYjc2MGFh/MGQ3M2VhYzM4MTVl/ZWRkM2U3YTM1YWJm/Ny5qcGc_dHM9MTYy/MjE5MzMwOQ" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/eRoy_HyXZjA-rZJ4KDJUYxZvZhQsW-5qd6HR2Srw7e8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzFmLzk0/LzUxLzFmOTQ1MTdl/NDI2ZjhkMjQ2Mjg5/YTI0NGExMWExOGZh/LmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/LVbMxTfmq_FGkgR4ECOSDjVnRNx2hcQ3FyQKpfYUp_k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9hY3Rpb24t/bW92aWUtcG9zdGVy/LXRlbXBsYXRlLWRl/c2lnbi0yNGIyY2Fl/ZTM1NzdjODExN2Nl/NjVjNGM2OWMxY2Vi/My5qcGc_dHM9MTYz/NzAzNjAyMw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/bWt8Jf9Aoe55RarUoFuPCzbnRB9fE7ClIPMLOh2RHBc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tYXJr/ZXRwbGFjZS5jYW52/YS5jb20vRUFFLU1D/SkU5QUUvMS8wLzEx/MzF3L2NhbnZhLWRh/cmstcmVkLXNpbXBs/ZS1hY3Rpb24tc3Bh/Y2UtbW92aWUtcHJv/bW90aW9uLXBvc3Rl/ci1aRnlkS29xNVdF/dy5qcGc" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/ORBJGsCj6tru3vyz6ctnQjg5Hkvx-wBBROpnPeM_O_g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2FkL2Zl/L2FmL2FkZmVhZjg4/NTkxM2Q5Nzk4ZWUz/ODE4YWMzYmYyZjg1/LmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/yXr3v3py5J2rzWUPr0wscMnErXUAVVbIOahXIXYV4zY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tYXJr/ZXRwbGFjZS5jYW52/YS5jb20vRUFFLUh0/QWtLN28vMS8wLzEx/MzF3L2NhbnZhLWRh/cmstZ3JleS1zaW1w/bGUtc2FtdXJhaS13/YXJyaW9yLWFjdGlv/bi1tb3ZpZXMtcHJv/bW90aW9uLXBvc3Rl/ci0wU2lSNnk3YXlw/by5qcGc" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/a5SJI266CHCJzTmvqQnNmdDc5YJDa7A9RN39MWwT-8M/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9hY3Rpb24t/bW92aWUtcG9zdGVy/LXRlbXBsYXRlLWRl/c2lnbi00M2Q4YzZj/OGY4ZjljNjIyMTU1/NDJjMzM2MTkwZjRl/Yi5qcGc_dHM9MTY2/OTExMTM4Mg" alt="" />
+      </div>
+    </div>
+
+    <!-- Comedy Movies -->
+    <div class="row">
+      <h2>Comedy Movies</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="https://imgs.search.brave.com/zGLCD_PHMCmRTryuLwgcYF3PQRiJx0Usmohdt3vtwVM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGlzY291bnRkaXNw/bGF5cy5jby51ay9v/dXItYmxvZy93cC1j/b250ZW50L3VwbG9h/ZHMvYW1lcmljYW4t/cGllLW1vdmllLXBv/c3Rlci5qcGc" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/ANreEge2szkbD94-pp0Muy8o4lBQuHQXRfanT1qyy0M/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2I0L2Vi/LzI0L2I0ZWIyNGMz/NTkxYWNhNGQzNGM4/MjNhZDBhNjE4ZGMz/LmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/BO1_EBUeRZBpdHNUXR2smhdene9bCM7U3RNkYbPM71g/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/b3JpZ2luYWxmaWxt/YXJ0LmNvbS9jZG4v/c2hvcC9maWxlcy9o/b2xseXdvb2RzaHVm/ZmxlXzE5ODdfb3Jp/Z2luYWxfZmlsbV9h/cnRfYV80OTkzYWU3/OS00YmQyLTRkNjIt/YjA3MC03NjRiNDA4/NTdiNzhfMjAwMHgu/d2VicD92PTE2OTgx/MTE2ODY" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/I1AanouTT3sw5e5mC5uwqP00ueIcV65K2IB1t4M0i7w/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzMwLzg4/L2NkLzMwODhjZGJm/YTQxZTAwMTI0YTQw/YWRkYWI2NjNkZjA4/LmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/vontwWW7Bx5DC69L2HI_kde8m-FDKN9RuzPvcTBxXNc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzNhL2Iz/Lzk4LzNhYjM5OGVk/NmM5NTkxYjA0NjFm/YWFhZGU2YWMwMDcw/LmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/qmHDPCFqS0QJb2Ci7zP77SWbqP4j3ttr9h8nUU3gOp4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzY4LzZh/LzI2LzY4NmEyNjU2/OGFiY2VmMmQ2ZDQ3/MjI2NWNmYzc2OWQx/LmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/XWoMdnxdGRMlRqMot3lrgPzi-1u1VFQj5a8dJiUysxA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/b3JpZ2luYWxmaWxt/YXJ0LmNvbS9jZG4v/c2hvcC9maWxlcy9q/ZXJrXzE5Nzlfb3Jp/Z2luYWxfZmlsbV9h/cnRfYV8yMDAweC53/ZWJwP3Y9MTY4OTM2/NDQ1NA" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/l1B0r-hH1C2ekHjzgzylo8muKAaKfwCB-jPSo8CYfHc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzBkLzg3/LzQ2LzBkODc0NmI5/ZTQ3M2M0YTNkMWM5/ZGY3NmVkNDgxYWJm/LS1tb3ZpZXMtLW5l/dy1tb3ZpZXMuanBn" alt="" />
+      </div>
+    </div>
+
+    <!-- Horror Movies -->
+    <div class="row">
+      <h2>Horror Movies</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="https://imgs.search.brave.com/PkdP6_sBUiKvqBbV0ZLNBrfi4kYQi4KCkv6NRufsvSU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9ob3Jyb3It/bW92aWUtcG9zdGVy/LXRlbXBsYXRlLWRl/c2lnbi05OWE4NDUx/YmJlNWYzNTdiNzZm/YjZlMDcwYjRmZjM4/ZS5qcGc_dHM9MTYz/NzAxMzk0OA" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/2ieejlpB3MyX078ZR-WzWBlhzlQQ_B5uHJM_R8RSxwc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2Q0L2M4/L2RhL2Q0YzhkYTUx/NzU0NjFmNjE0NmIy/YTAwOTViN2EyMjQy/LmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/bDYlCATe19-wQbZOx1aov4OWfK83TbVfJ8HRVwDVsj8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9ob3Jyb3It/bW92aWUtdmlkZW8t/cG9zdGVyLWRlc2ln/bi10ZW1wbGF0ZS1l/NWVkMmFiOGQ0M2U1/ZGJjZjM4OGI4MzQ2/NzA3MzlkNy5qcGc_/dHM9MTY4NzE5MDc4/NA" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/dJZP9SaAVKeztbCpEyFFWsX7W2wQDWb8cJ0c2mETol0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy90aHJpbGxl/ci1tb3ZpZS1wb3N0/ZXItdGVtcGxhdGUt/ZGVzaWduLTYwODEw/YjQ4ZjgyOGQ5MTNk/YTIyNGYzMTNhNzcz/MmQxLmpwZz90cz0x/NjY5MTA5MjYw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/9a2ESRVvVJ0REpcP98EEWEDzfnZ8FDb6J8Y-CPmot70/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/b3JpZ2luYWxmaWxt/YXJ0LmNvbS9jZG4v/c2hvcC9wcm9kdWN0/cy9tYXJ5X3NoZWxs/ZXlzX2ZyYW5rZW5z/dGVpbl8xOTk0X29y/aWdpbmFsX2ZpbG1f/QXJ0X2Ffc3BvXzIw/MDB4LmpwZz92PTE1/NTE4OTE5NDU" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/CbiOW9kj8da0DMCGiE1ba9f9RP5HnkOQ7WR2AJ6CIS0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9ob3Jyb3It/bW92aWVzLWRlc2ln/bi10ZW1wbGF0ZS1j/YzFjMDUzZDE3ZjRk/YzM5NjM2NTJiMzFk/OWY2YzEyOS5qcGc_/dHM9MTYzNzAzNjAy/OQ" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/KtsnzpLITsr25MLSkCp0386ju9ASAem6EnV-GvY0Z_M/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9oYWxsb3dl/ZW4tbW92aWUtcG9z/dGVyLWRlc2lnbi10/ZW1wbGF0ZS02ZjZm/YWExZjk2ZDM2OTc3/ZjNjY2E5NWJmZGFj/YzU4Yi5qcGc_dHM9/MTY5Njc4Mjg0Mw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/92ICPVcmqd6OlfOBIiexL0oxa5QgeCC5aHFhKXMhfwQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/b3JpZ2luYWxmaWxt/YXJ0LmNvbS9jZG4v/c2hvcC9wcm9kdWN0/cy9kcmFjdWxhXzE5/NzlfamFwYW5lc2Vf/YjJfb3JpZ2luYWxf/ZmlsbV9hcnRfYS5q/cGc_dj0xNTYyNTQy/NTQwJndpZHRoPTE2/MDA" alt="" />
+      </div>
+    </div>
+
+    <!-- Romance Movies -->
+    <div class="row">
+      <h2>Romance Movies</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="https://imgs.search.brave.com/9si3nrbnd3NVQW-r8GPj3IlpEi30Sz0yoRJrUNBfoQM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbnRo/ZXBvc3Rlci5jb20v/Y2RuL3Nob3AvcHJv/ZHVjdHMvZml2ZS15/ZWFycy1pbi10aGUt/cG9zdGVyLTFfMTYw/MHguanBnP3Y9MTY5/NDc2MjQ3Ng" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/iMzUQ-kYmnqQDlOlU7HyIin09Sk939dihEFxJ6V48qM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzdhLzMw/L2E5LzdhMzBhOWJj/YTQ1YWU2NmE3NjVm/MDM0MDVhYmFlOGY0/LmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/TjT1zEmSk4As6NeUzaNyuDONXfQ0l9GekKwTEEXkWtc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzliL2Q5/L2M5LzliZDljOThh/MDY2OTc4MjRjNTAw/ZGM0ZjU3Y2FmMmQ0/LmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/oD0VwuCOwTQscNYz2G2DcpFJDnixgCnZ3iV3oDewnLU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9kMWNz/YXJrejhvYmU5dS5j/bG91ZGZyb250Lm5l/dC9wb3N0ZXJwcmV2/aWV3cy9sb3ZlLW9y/LXJvbWFudGljLW1v/dmllLXBvc3Rlci10/ZW1wbGF0ZS1kZXNp/Z24tNDM2ZWU5YTI0/YjVhZTcwZmI0OTc1/NjU2NDM5NmM2Mjcu/anBnP3RzPTE2MzY5/OTY3MTI" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/K_aEw_Dyl5Q5LMKCIW-3jFJ4UE5bQXqGhfqCU3MNptg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly95b3Vy/ZmlsbXBvc3Rlci5j/b20vY2RuL3Nob3Av/cHJvZHVjdHMvb3Vy/am91cm5leV9kYmFl/NThhNy00MTE1LTQw/YmUtYjZhMS1jYjZm/MTExNDI3YzQud2Vi/cD92PTE2ODk1OTc5/ODEmd2lkdGg9NTMz" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/4oX6nhXA0HW7PijXMNc9fxOv-VfH8nTqtSaFqGVnBy0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly8xMjFj/bGlja3MuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDExLzEw/L21vdmllX3Bvc3Rl/cnNfcGhvdG9ncmFw/aHkzNy5qcGc" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/dP28U1jjKaGALbIp_Tb5yVlZ1CftVV7RpCGiKBvH_vg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly95b3Vy/ZmlsbXBvc3Rlci5j/b20vY2RuL3Nob3Av/cHJvZHVjdHMvRml2/ZVllYXJzX29wdC53/ZWJwP3Y9MTY4OTYw/ODI3MCZ3aWR0aD01/MzM" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/grQvINdyWqm2KSt6IyqEVKiBxCj_ooBsVQ6xT3y6kow/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzEzL2Vi/LzQ0LzEzZWI0NGZh/MmY1ZDlmYjBhNDA2/Y2Y0MmVkMDg5YTI2/LS1yb21hbnRpYy1t/b3ZpZXMtY2xhcmst/Z2FibGUuanBn" alt="" />
+      </div>
+    </div>
+
+    <!-- Documentaries -->
+    <div class="row">
+      <h2>Documentaries</h2>
+      <div class="row__posters">
+        <img class="row__poster" src="https://imgs.search.brave.com/j2dcWwO9vxeTTBFJfSVLC2L8aZ8JHUum1KiFOh7GzvI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ndWlk/ZWRvYy1tZWRpYS5z/My5hbWF6b25hd3Mu/Y29tL2Jsb2dzLzIw/MjEvMTEvMjIvb19q/X21hZGVfaW5fYW1l/cmljYV9taW5pc2Vy/aWVfZGVfdHYtMjA3/NTU4MjQ2LWxhcmdl/LmpwZWc" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/WDkNilv7jJuOnyFM6-CbPo8VIgIjw_EVpobNj9N1wKw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2E0L2Jl/L2Q5L2E0YmVkOTE5/Zjk5NjhlMzlmNzAy/YjUxNWEyYzdhZjNl/LmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/sbWaXvqFFO6E7yMsso9WSQeNKJ0jF9ViDOykOPK2g_4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tYXJr/ZXRwbGFjZS5jYW52/YS5jb20vRUFEYW9N/Z0hTcFEvMi8wLzU2/NncvY2FudmEtd2hp/dGUtbW92aWUtcG9z/dGVyLWpEQmhRakZ5/MV9NLmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/kZFr_XZ7dgO6_C9ry7paXN9Up6RfVnj0_ex-lh36n74/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzdiLzdl/LzExLzdiN2UxMWFk/MDIxNjVhMjcxOGE3/NDE5NDFjOWRmZjQz/LmpwZw" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/c9WyddQtyh7INOjsPUO01zLI4QfXTFg-WbqM7bJBJug/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ndWlk/ZWRvYy1tZWRpYS5z/My5hbWF6b25hd3Mu/Y29tL2Jsb2dzLzIw/MjEvMTEvMjIvbG9h/XzA0LTFfOHN3c2Zs/aC5qcGVn" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/ntzacPF8QvRlqOhRqZfoLmJPL-mPwKtiQU8nbiR-DRU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/ODFoR1B4RjBpcUwu/anBn" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/dleM1yZFu92N43in1iEKAZgUm4Fgzz1tE-eJGYeohJ0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ndWlk/ZWRvYy1tZWRpYS5z/My5hbWF6b25hd3Mu/Y29tL2Jsb2dzLzIw/MjEvMTEvMjIvNTM0/NWYyNmJmYWIzMDQ5/MThjMzg0NGNmNThk/ZWI3NGRfYnBqamJr/by5qcGVn" alt="" />
+
+        <img class="row__poster" src="https://imgs.search.brave.com/ixp_zqFHICjMVF5vE9ygljfD969NeyDyNGd7UpIkPco/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2ZiL2Q0/LzhlL2ZiZDQ4ZTdk/NDJmMmVlNTNmZDlh/YTRkM2YzN2VkNzlm/LmpwZw" alt="" />
+      </div>
+    </div>
+
+    <script>
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add('nav__black');
+        } else {
+          nav.classList.remove('nav__black');
+        }
+      });
+    </script>
+  </body>
+</html>
